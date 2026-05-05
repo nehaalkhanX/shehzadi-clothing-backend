@@ -5,7 +5,12 @@ const cors = require('cors')
 const app = express();
 
 app.use(cors({
-    origin: "https://shehzadi-clothing-frontend.vercel.app", // Your exact Vercel URL
+    origin: [
+        "http://localhost:5173",
+        "https://shehzadi-clothing-frontend.vercel.app",
+        "https://shehzadiclothing.com",      // Add this
+        "https://www.shehzadiclothing.com"   // And this
+    ],
     credentials: true
 }));
 

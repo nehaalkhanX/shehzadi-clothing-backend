@@ -4,7 +4,10 @@ const cors = require('cors')
 
 const app = express();
 
-app.use(cors());
+app.use(cors({
+    origin: "https://shehzadi-clothing-frontend.vercel.app", // Your exact Vercel URL
+    credentials: true
+}));
 
 app.use(express.json());
 

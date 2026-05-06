@@ -11,7 +11,7 @@ app.use(cors({
         "https://shehzadi-clothing-frontend.vercel.app",
         "https://shehzadiclothing.com",      // Add this
         "https://www.shehzadiclothing.com",
-        "https://admin.shehzadiclothing.com/"  // And this
+        "https://admin.shehzadiclothing.com"  // And this
     ],
     credentials: true
 }));

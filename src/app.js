@@ -7,9 +7,11 @@ const app = express();
 app.use(cors({
     origin: [
         "http://localhost:5173",
+        "http://localhost:5174",
         "https://shehzadi-clothing-frontend.vercel.app",
         "https://shehzadiclothing.com",      // Add this
-        "https://www.shehzadiclothing.com"   // And this
+        "https://www.shehzadiclothing.com",
+        "https://admin.shehzadiclothing.com/"  // And this
     ],
     credentials: true
 }));
